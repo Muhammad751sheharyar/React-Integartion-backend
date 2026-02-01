@@ -4,8 +4,8 @@ function Navbar() {
   return (
     <div>
       <NavLink to={"/Home"}>Home</NavLink>
-      <NavLink to={"/about"}>Login</NavLink>
-      <NavLink to={"/contact"}>Signup</NavLink>
+      <NavLink to={"/About"}>Login</NavLink>
+      <NavLink to={"/Contact"}>Signup</NavLink>
     </div>
 )}
 

@@ -6,13 +6,15 @@ import Contact from '../components/Contact'
 function Home() {
     return (
         <div>
-            <Router>
-                <Navbar />
+            hello iam home
+            {/* <Navbar /> */}
+            {/* <Router>
+                <Navbar/>
                 <Routes>
                     <Route path='/Contact' element={<Contact/>}/>
                     <Route path='/About' element={< About />} />
                 </Routes>
-            </Router>
+            </Router> */}
         </div>
     )
 }

@@ -1,11 +1,12 @@
 import { useState } from "react";
-
+import { useNavigate } from 'react-router-dom'
 function Signup() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
 
+    const navigate = useNavigate();
     const signupHandler = () => {
         fetch("http://localhost:5000/api/auth/signup", {
             method: "POST",
@@ -21,12 +22,13 @@ function Signup() {
             .then(res => res.json())
             .then(data => {
                 setMessage(data.message || "Signup successful");
+                useNavigate("/Login")
+
             })
             .catch(() => {
                 setMessage("Something went wrong");
             });
     };
-
     return (
         <div>
             <h2>Signup</h2>
