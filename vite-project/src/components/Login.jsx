@@ -1,10 +1,11 @@
 import { useState } from "react";
-
+import Home from "../components/Home";
+import { useNavigate } from 'react-router-dom'
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
-
+  const navigate = useNavigate()
   const loginHandler = () => {
     fetch("http://localhost:5000/api/auth/login", {
       method: "POST",
@@ -20,6 +21,8 @@ function Login() {
       .then(data => {
         if (data.success) {
           setMessage("Login successful ✅");
+          useNavigate("/Home")
+
         } else {
           setMessage(data.message || "Invalid credentials");
         }
