@@ -7,14 +7,13 @@ function Home() {
     return (
         <div>
             hello iam home
-            {/* <Navbar /> */}
-            {/* <Router>
+             <Router>
                 <Navbar/>
                 <Routes>
-                    <Route path='/Contact' element={<Contact/>}/>
-                    <Route path='/About' element={< About />} />
+                    <Route path='/contact' element={<Contact/>}/>
+                    <Route path='/about' element={< About />} />
                 </Routes>
-            </Router> */}
+            </Router>
         </div>
     )
 }

@@ -6,7 +6,7 @@ function Signup() {
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const signupHandler = () => {
         fetch("http://localhost:5000/api/auth/signup", {
             method: "POST",
@@ -22,7 +22,7 @@ function Signup() {
             .then(res => res.json())
             .then(data => {
                 setMessage(data.message || "Signup successful");
-                useNavigate("/Login")
+                // useNavigate("/Login")
 
             })
             .catch(() => {
