@@ -1,38 +1,28 @@
-import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Login from './components/Login'
 import Signup from './components/Signup'
-// import Login from './components/Login'
-// import Home from './components/Home'
 import Button from './components/Button'
-// import Signup from './components/Signup'
-
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact'
 function App() {
   return (
     <>
       <Router>
-      <Button />
+        <Button />
         <Routes>
-          <Route path='/signup' element={<Signup/>} />
+          <Route path='/signup' element={< Signup />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/Home' element={<Home />} />
+           <Route path='/contact' element={<Contact />} />
+          <Route path='/about' element={< About />} /> 
         </Routes>
       </Router>
-
-
-
     </>
   )
 }
 
 export default App
-
-
-// <div style={{ padding: "20px" }}>
-//    <button onClick={() => setPage("signup")}>Signup</button>
-//    <button onClick={() => setPage("login")}>Login</button>
-//   <hr />
-//   {page === "signup" ? <Signup /> : <Login />}
-// </div>
-
-
 
 
 

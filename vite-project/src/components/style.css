@@ -1,0 +1,17 @@
+.Main{
+    margin: 0% auto;
+    height: 400px;
+    width: 400px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 30px;
+}
+.Main input{
+    height: 30px;
+    width: 80%;
+}

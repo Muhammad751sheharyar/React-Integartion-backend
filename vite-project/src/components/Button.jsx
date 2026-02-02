@@ -1,14 +1,10 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
-import Navbar from '../components/Navbar'
+import { NavLink} from 'react-router-dom'
 function Button() {
   return (
     <div>
-      hello
-      {/* <Navbar /> */}
-      {/* <h1>hello word</h1> */}
-        <NavLink to={"/signup"}>Signup</NavLink>
-        <NavLink to={"/login"}>Login</NavLink>     
+        <NavLink to={"/signup"} >Signup</NavLink><br />
+        <NavLink to={"/login"} >Login</NavLink>     
     </div>
  )
 }

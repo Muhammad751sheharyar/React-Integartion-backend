@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { useNavigate } from 'react-router-dom'
+import './style.css'
+// import { useNavigate } from 'react-router-dom'
 function Signup() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -30,7 +31,7 @@ function Signup() {
             });
     };
     return (
-        <div>
+        <div className="Main">
             <h2>Signup</h2>
 
             <input
